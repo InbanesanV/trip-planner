@@ -1,5 +1,5 @@
 {
-  "version": 2,
-  "builds": [{ "src": "server/index.js", "use": "@vercel/node" }],
-  "routes": [{ "src": "/(.*)", "dest": "server/index.js" }]
+  "rewrites": [
+    { "source": "/api/:path*", "destination": "https://client-p3a2.vercel.app/api/:path*" }
+  ]
 }
