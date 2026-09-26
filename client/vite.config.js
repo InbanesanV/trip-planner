@@ -9,7 +9,7 @@ export default defineConfig({
     proxy: {
       // Proxy all /api/* requests to the Express backend
       '/api': {
-        target: 'http://localhost:3001',
+        target: 'https://client-p3a2.vercel.app',
         changeOrigin: true,
       },
     },
