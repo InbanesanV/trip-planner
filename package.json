@@ -1,0 +1,24 @@
+{
+  "name": "recall-study-assistant",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI-powered study assistant with flashcards and quiz modes",
+  "scripts": {
+    "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "server": "node server/index.js",
+    "server:dev": "nodemon server/index.js",
+    "client": "npm run dev --prefix client",
+    "build": "npm run build --prefix client",
+    "install:all": "npm install && npm install --prefix client"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.0",
+    "concurrently": "^9.1.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
