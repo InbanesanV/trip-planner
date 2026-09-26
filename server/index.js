@@ -69,3 +69,4 @@ app.listen(PORT, () => {
     console.warn('[server] WARNING: GEMINI_API_KEY is not set — /api/generate will return 500.');
   }
 });
+module.exports = app;
